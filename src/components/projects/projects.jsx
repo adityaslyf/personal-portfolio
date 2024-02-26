@@ -28,7 +28,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center">
+    <div className=" flex flex-col items-center">
       <span className="text-2xl font-bold mb-4 w-full text-center">Projects</span>
       <div className="w-full md:w-1/2 lg:w-full h-[5px] bg-gradient-to-r from-purple-700 via-orange-500 to-orange-500 mb-8"></div>
 

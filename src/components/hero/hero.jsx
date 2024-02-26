@@ -4,7 +4,7 @@ import './hero.css' // Import the CSS file
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center space-y-4 p-4 bg-gray-800 rounded-lg shadow-md h-[100vh] ">
+    <div className="flex flex-col items-center space-y-4 p-4 bg-[#2b2a27] rounded-lg shadow-md h-[100vh] ">
       <img className="rounded-full h-54 w-54 sm:h-46 sm:w-46 animate-fade-up" src={ProfileImage} alt="" />
       <h1 className="text-xl sm:text-2xl font-bold text-gray-200  animate-fade-left">Hey</h1>
       <h1 className="text-lg sm:text-xl font-semibold text-gray-700 animate-fade-in">

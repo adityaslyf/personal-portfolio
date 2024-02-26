@@ -12,7 +12,7 @@ const Contact = () => {
   }
   
   return (
-    <div className="flex flex-col p-10 bg-gray-800 ">
+    <div className="flex flex-col p-10 bg-[#2b2a27] ">
       <div className="flex flex-col justify-center items-center mb-10">
         <span className="text-3xl text-blue-500 font-bold mb-2">Contact</span>
         <span className="text-lg text-gray-700">
@@ -21,7 +21,7 @@ const Contact = () => {
       </div>
 
       <div className=" map_contact flex flex-col md:flex-row justify-evenly">
-        <div className="contact flex flex-col w-full md:w-1/3 bg-[#662D8C] p-5 rounded shadow-lg mb-10 md:mb-0">
+        <div className="contact flex flex-col w-full md:w-1/3 p-5 rounded shadow-xl mb-10 md:mb-0">
           <span className="text-2xl font-bold mb-2 text-blue-500 ">Email Me</span>
           <input
             className="border p-2 rounded mb-2"
@@ -43,7 +43,7 @@ const Contact = () => {
             type="text"
             placeholder=" Message"
           />
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <button className="bg-red-500 hover:bg-green-900 text-white font-bold py-2 px-4 rounded">
             Send
           </button>
         </div>

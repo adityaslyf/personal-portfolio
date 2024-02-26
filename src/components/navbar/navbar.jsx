@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <motion.div
-      className="bg-gray-800 bg-opacity-60 mx-auto p-4 backdrop-filter backdrop-blur-lg rounded-lg"
+      className="bg-[#2b2a27] bg-opacity-60 mx-auto p-4 backdrop-filter backdrop-blur-lg rounded-lg"
       initial={{ y: "-100%" }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
@@ -45,35 +45,35 @@ const Navbar = () => {
       <div className={`${showMenu ? "block" : "hidden"} sm:block`}>
         <div className="button grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 p-6">
           <motion.button
-            className="w-auto font-serif font-bold border-2 p-2 rounded-sm bg-blue-700 bg-opacity-20 backdrop-filter backdrop-blur-lg border-blue-500 text-white shadow-md"
+            className="w-auto font-serif font-bold border-2 p-2 rounded-sm  bg-opacity-20 backdrop-filter backdrop-blur-lg bg-[#1c1708] text-white shadow-md"
             variants={buttonVariants}
             whileHover="hover"
           >
             Contact
           </motion.button>
           <motion.button
-            className="w-auto font-serif font-bold border-2 p-2 rounded-sm bg-blue-700 bg-opacity-20 backdrop-filter backdrop-blur-lg border-blue-500 text-white shadow-md"
+            className="w-auto font-serif font-bold border-2 p-2 rounded-sm bg-[#1c1708] bg-opacity-20 backdrop-filter backdrop-blur-lg text-white shadow-md"
             variants={buttonVariants}
             whileHover="hover"
           >
             Resume
           </motion.button>
           <motion.button
-            className="w-auto font-serif font-bold border-2 p-2 rounded-sm bg-blue-700 bg-opacity-20 backdrop-filter backdrop-blur-lg border-blue-500 text-white shadow-md"
+            className="w-auto font-serif font-bold border-2 p-2 rounded-sm bg-[#2b2a27] bg-opacity-20 backdrop-filter backdrop-blur-lg  text-white shadow-md"
             variants={buttonVariants}
             whileHover="hover"
           >
             Projects
           </motion.button>
           <motion.button
-            className="w-auto font-serif font-bold border-2 p-2 rounded-sm bg-blue-700 bg-opacity-20 backdrop-filter backdrop-blur-lg border-blue-500 text-white shadow-md"
+            className="w-auto font-serif font-bold border-2 p-2 rounded-sm bg-[#2b2a27] bg-opacity-20 backdrop-filter backdrop-blur-lg text-white shadow-md"
             variants={buttonVariants}
             whileHover="hover"
           >
             About
           </motion.button>
           <motion.button
-            className="w-auto font-serif font-bold border-2 p-2 rounded-sm bg-blue-700 bg-opacity-20 backdrop-filter backdrop-blur-lg border-blue-500 text-white shadow-md"
+            className="w-auto font-serif font-bold border-2 p-2 rounded-sm bg-[#2b2a27] bg-opacity-20 backdrop-filter backdrop-blur-lg  text-white shadow-md"
             variants={buttonVariants}
             whileHover="hover"
           >

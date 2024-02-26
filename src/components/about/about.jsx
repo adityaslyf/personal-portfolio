@@ -3,7 +3,7 @@ import ProfileImage from "../../assets/profilepic.jpg";
 
 const About = () => {
   return (
-    <div className="mt-4 flex flex-col md:flex-row justify-evenly bg-gray-800 w-full h-[2200px]] p-4">
+    <div className=" bg-[#2b2a27] mt-4 flex flex-col md:flex-row justify-evenly  w-full h-[2200px]] p-4">
       <img
         className="rounded-md w-auto md:w-96 md:h-96"
         src={ProfileImage}
