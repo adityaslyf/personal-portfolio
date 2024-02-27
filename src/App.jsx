@@ -9,12 +9,13 @@ import Backend from './components/skills/Backend'
 import Experiences from './components/experience/experience'
 import Contact from './components/contact/contact'
 import Skills from './components/skills/skills'
+import Footer from './components/footer/footer'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div className=" w-auto h-[7136px] bg-[#2b2a27] ">
+      <div className=" w-auto h-auto bg-[#2b2a27] ">
         {/* <div className=' w-[1440px] h-[7019px] bg-[#232732]'> */}
         <Navbar />
         <Hero />
@@ -28,7 +29,7 @@ function App() {
        
        <Experiences />
        <Contact /> 
-    
+    <Footer />
       </div>
         {/* </div> */}
     

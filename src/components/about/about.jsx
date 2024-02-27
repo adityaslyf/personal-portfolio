@@ -12,13 +12,12 @@ const About = () => {
       <div className="flex flex-col mt-4 md:mt-0">
         <span className="text-white text-2xl">About Me</span>
         <span className="w-full md:w-96 text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-          explicabo similique tenetur, eum atque nemo vero nobis, modi quisquam
-          dolore facere cumque soluta, reiciendis deleniti? Unde animi tenetur
-          vero non. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Aliquam, inventore in quo iste, corrupti accusamus deleniti ab
-          distinctio cumque illo atque. At eaque voluptate minus distinctio
-          quasi, odio voluptatum ducimus.
+          👋 Hey there! I'm Aditya Varshney, a full-stack web developer
+          specializing in the MERN stack. With a knack for crafting engaging web
+          experiences, I thrive on challenges in backend scalability, frontend
+          intuitiveness, and performance optimization. Committed to staying
+          ahead in tech, I'm always learning new frameworks and techniques.
+          Let's connect and create something extraordinary together!
         </span>
       </div>
     </div>

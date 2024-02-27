@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
+
 const buttonVariants = {
   hover: {
     scale: 1.1,
@@ -45,14 +46,14 @@ const Navbar = () => {
       <div className={`${showMenu ? "block" : "hidden"} sm:block`}>
         <div className="button grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 p-6">
           <motion.button
-            className="w-auto font-serif font-bold border-2 p-2 rounded-sm  bg-opacity-20 backdrop-filter backdrop-blur-lg bg-[#1c1708] text-white shadow-md"
+            className="w-auto font-serif font-bold border-2 p-2 rounded-sm  bg-opacity-20 backdrop-filter backdrop-blur-lg bg-[#2b2a27] text-white shadow-md"
             variants={buttonVariants}
             whileHover="hover"
           >
             Contact
           </motion.button>
           <motion.button
-            className="w-auto font-serif font-bold border-2 p-2 rounded-sm bg-[#1c1708] bg-opacity-20 backdrop-filter backdrop-blur-lg text-white shadow-md"
+            className="w-auto font-serif font-bold border-2 p-2 rounded-sm bg-[#2b2a27] bg-opacity-20 backdrop-filter backdrop-blur-lg text-white shadow-md"
             variants={buttonVariants}
             whileHover="hover"
           >
@@ -65,6 +66,8 @@ const Navbar = () => {
           >
             Projects
           </motion.button>
+
+          
           <motion.button
             className="w-auto font-serif font-bold border-2 p-2 rounded-sm bg-[#2b2a27] bg-opacity-20 backdrop-filter backdrop-blur-lg text-white shadow-md"
             variants={buttonVariants}
@@ -72,6 +75,7 @@ const Navbar = () => {
           >
             About
           </motion.button>
+     
           <motion.button
             className="w-auto font-serif font-bold border-2 p-2 rounded-sm bg-[#2b2a27] bg-opacity-20 backdrop-filter backdrop-blur-lg  text-white shadow-md"
             variants={buttonVariants}
