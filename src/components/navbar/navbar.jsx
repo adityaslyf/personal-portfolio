@@ -27,7 +27,7 @@ const Navbar = () => {
     >
       <div className="sm:hidden">
         <button
-          className="block text-gray-500 hover:text-white focus:text-white focus:outline-none"
+          className="block text-gray-500 hover:text-white focus:text-white focus:outline-none "
           onClick={toggleMenu}
         >
           <svg
