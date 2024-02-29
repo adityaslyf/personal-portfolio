@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-
+import { IoMdContact } from "react-icons/io";
+import { GrResume } from "react-icons/gr";
+import { FaProjectDiagram } from "react-icons/fa";
+import { FcAbout } from "react-icons/fc";
+import { GrAchievement } from "react-icons/gr";
 
 const buttonVariants = {
   hover: {
@@ -20,7 +24,8 @@ const Navbar = () => {
 
   return (
     <motion.div
-      className="bg-[#2b2a27] bg-opacity-60 mx-auto p-4 backdrop-filter backdrop-blur-lg rounded-lg"
+      className="bg-[#2b2a27] bg-opacity-60 mx-auto rounded-lg"
+      style={{ height: '50px' }} // Add a specific height here
       initial={{ y: "-100%" }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
@@ -46,42 +51,44 @@ const Navbar = () => {
       <div className={`${showMenu ? "block" : "hidden"} sm:block`}>
         <div className="button grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 p-6">
           <motion.button
-            className="w-auto font-serif font-bold border-2 p-2 rounded-sm  bg-opacity-20 backdrop-filter backdrop-blur-lg bg-[#2b2a27] text-white shadow-md"
+            className="flex flex-col items-center justify-center w-auto font-serif font-bold rounded-sm bg-opacity-20 text-white shadow-md"
             variants={buttonVariants}
             whileHover="hover"
           >
-            Contact
+            <IoMdContact size={24} />
+            <div>Contact</div>
           </motion.button>
           <motion.button
-            className="w-auto font-serif font-bold border-2 p-2 rounded-sm bg-[#2b2a27] bg-opacity-20 backdrop-filter backdrop-blur-lg text-white shadow-md"
+            className="flex flex-col items-center justify-center w-auto font-serif font-bold rounded-sm bg-opacity-20 text-white shadow-md"
             variants={buttonVariants}
             whileHover="hover"
           >
-            Resume
+            <GrResume size={24} />
+            <div>Resume</div>
           </motion.button>
           <motion.button
-            className="w-auto font-serif font-bold border-2 p-2 rounded-sm bg-[#2b2a27] bg-opacity-20 backdrop-filter backdrop-blur-lg  text-white shadow-md"
+            className="flex flex-col items-center justify-center w-auto font-serif font-bold rounded-sm bg-opacity-20 text-white shadow-md"
             variants={buttonVariants}
             whileHover="hover"
           >
-            Projects
+            <FaProjectDiagram size={24} />
+            <div>Project</div>
           </motion.button>
-
-          
           <motion.button
-            className="w-auto font-serif font-bold border-2 p-2 rounded-sm bg-[#2b2a27] bg-opacity-20 backdrop-filter backdrop-blur-lg text-white shadow-md"
+            className="flex flex-col items-center justify-center w-auto font-serif font-bold rounded-sm bg-opacity-20 text-white shadow-md"
             variants={buttonVariants}
             whileHover="hover"
           >
-            About
+            <FcAbout size={24} />
+            <div>About</div>
           </motion.button>
-     
           <motion.button
-            className="w-auto font-serif font-bold border-2 p-2 rounded-sm bg-[#2b2a27] bg-opacity-20 backdrop-filter backdrop-blur-lg  text-white shadow-md"
+            className="flex flex-col items-center justify-center w-auto font-serif font-bold rounded-sm bg-opacity-20 text-white shadow-md"
             variants={buttonVariants}
             whileHover="hover"
           >
-            Certificate
+            <GrAchievement size={24} />
+            <div>Achievement</div>
           </motion.button>
         </div>
       </div>

@@ -3,7 +3,8 @@ import React from "react";
 const skills = () => {
   return (
     <div className="p-10">
-      <h1 className="text-4xl text-white font-bold mb-10">Professional SkillSet</h1>
+      <h1 className="text-2xl  text-center font-serif text-yellow-600 mb-4 font-['Kode Mono', monospace] font-bold mb-10">Professional SkillSet</h1>
+      <div className="w-full h-[5px] bg-gradient-to-r from-purple-700 via-orange-500 to-orange-500 mb-8"></div>
       <div className=" cards flex justify-evenly  ">
       <div className="mb-5 bg-stone-800 shadow-lg rounded-lg p-5">
         <span className="text-2xl font-semibold text-white">Frontend Skill</span>

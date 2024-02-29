@@ -20,7 +20,7 @@ const Hero = () => {
         <span className="text-sm md:text-lg text-blue-600 animate-fade-right ">
           Full Stack Web Developer
         </span>
-        <span className="w-auto md:w-96 text-gray-600 animate-fade-right  ">
+        <span className="w-auto md:w-96 text-gray-600 animate-fade-right font-kode-mono ">
           🎓 Currently in my second year of BTech studies, I'm not just a student
           but also a passionate web developer. I'm deeply driven by the desire to
           test and enhance my skills through hands-on projects. From dynamic web
