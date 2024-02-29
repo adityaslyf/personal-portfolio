@@ -2,62 +2,29 @@ import React from "react";
 
 const skills = () => {
   return (
-    <div className="p-10">
-      <h1 className="text-2xl  text-center font-serif text-yellow-600 mb-4 font-['Kode Mono', monospace] font-bold mb-10">Professional SkillSet</h1>
+    <div className="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12">
+      <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center font-serif text-yellow-600 mb-4 font-['Kode Mono', monospace] font-bold mb-10">Professional SkillSet</h1>
       <div className="w-full h-[5px] bg-gradient-to-r from-purple-700 via-orange-500 to-orange-500 mb-8"></div>
-      <div className=" cards flex justify-evenly  ">
-      <div className="mb-5 bg-stone-800 shadow-lg rounded-lg p-5">
-        <span className="text-2xl font-semibold text-white">Frontend Skill</span>
-        <Frontend />
+      <div className="flex flex-col sm:flex-row justify-evenly flex-wrap ">
+        <SkillCard title="Frontend Skill" skills={['React Js', 'Recoil', 'Next Js', 'Redux', 'Html', 'Css', 'Bootstrap', 'Tailwind', 'Material UI']} />
+        <SkillCard title="Backend Skill" skills={['Node Js', 'Express Js',  'MongoDB', 'PostgreSQL','Prisma']} />
+        <SkillCard title="Other Skill" skills={['Git', 'Github', 'Postman', 'Linux', 'VS Code', 'Netlify', 'Figma', 'Canva']} />
       </div>
-      <div className="bg-stone-800 shadow-lg rounded-lg p-5">
-        <span className="text-2xl font-semibold text-white">Backend Skill</span>
-        <Backend />
-      </div>
-      <div className="bg-stone-800 shadow-lg rounded-lg p-5">
-        <span className="text-2xl font-semibold text-white">Other Skill</span>
-        <Other />
-      </div>
-      </div>
-    
     </div>
   );
 };
 
-function Frontend() {
-  return (
-    <div className="flex flex-wrap mt-5 w-96">
-      {['React Js', 'Recoil', 'Next Js', 'Redux', 'Html', 'Css', 'Bootstrap', 'Tailwind', 'Material UI'].map((skill, index) => (
-        <div key={index} className="bg-green-800 border-2 rounded-2  w-24 h-14 m-2 flex items-center justify-center">
+const SkillCard = ({ title, skills }) => (
+  <div className="mb-5 sm:mb-0 bg-stone-800 shadow-lg rounded-lg p-5">
+    <span className="text-xl sm:text-2xl font-semibold text-white">{title}</span>
+    <div className="flex flex-wrap mt-5 w-full sm:w-96">
+      {skills.map((skill, index) => (
+        <div key={index} className="bg-green-800 border-2 rounded-2 w-24 h-14 m-2 flex items-center justify-center">
           <span className="text-white">{skill}</span>
         </div>
       ))}
     </div>
-  );
-}
-
-function Backend() {
-  return (
-    <div className="flex flex-wrap mt-5 w-96">
-      {['Node Js', 'Express Js', 'Graphql', 'Rest API', 'MongoDB', 'PostgreSQL', 'Sequelize', 'Prisma'].map((skill, index) => (
-        <div key={index} className="bg-green-800 rounded-2 border w-24 h-14 m-2 flex items-center justify-center">
-          <span className="text-white">{skill}</span>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function Other() {
-    return (
-      <div className="flex flex-wrap mt-5 w-96">
-        {['Git', 'Github', 'Postman', 'Linux', 'VS Code', 'Netlify', 'Figma', 'Canva'].map((skill, index) => (
-          <div key={index} className="bg-green-800 rounded-2 border w-24 h-14 m-2 flex items-center justify-center">
-            <span className="text-white">{skill}</span>
-          </div>
-        ))}
-      </div>
-    );
-  }
+  </div>
+);
 
 export default skills;

@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <motion.div
       className="bg-[#2b2a27] bg-opacity-60 mx-auto rounded-lg"
-      style={{ height: '50px' }} // Add a specific height here
+      style={{ height: showMenu ? 'auto' : '50px' }}
       initial={{ y: "-100%" }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
@@ -48,7 +48,7 @@ const Navbar = () => {
           </svg>
         </button>
       </div>
-      <div className={`${showMenu ? "block" : "hidden"} sm:block`}>
+      <div className={`${showMenu ? "block" : "hidden"} sm:flex justify-evenly`}>
         <div className="button grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 p-6">
           <motion.button
             className="flex flex-col items-center justify-center w-auto font-serif font-bold rounded-sm bg-opacity-20 text-white shadow-md"
