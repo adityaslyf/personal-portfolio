@@ -58,7 +58,7 @@ const Projects = () => {
           transition={{ duration: 0.5 }}
         >
           <motion.img
-            className="mb-3 md:mb-0 w-full md:w-96 h-64 md:h-96 object-cover rounded-md shadow-lg"
+            className="mb-3 md:mb-0 w-full md:w-[600px] h-64 md:h-96 object-cover rounded-md shadow-lg"
             src={project.image}
             alt="project"
             whileHover={{ scale: 1.05 }}
@@ -73,14 +73,14 @@ const Projects = () => {
               {project.title}
             </motion.h1>
             <motion.p
-              className="text-sm text-white mt-4 w-full md:w-96"
+              className="text-sm text-white mt-4 w-full md:w-96 "
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
               {project.description}
             </motion.p>
             <h2 className="text-lg text-white mt-4">Tech Stack:</h2>
-            <ul className=" flex gap-3">
+            <ul className=" flex gap-3 flex-wrap">
               {project.techStack.map((tech, index) => (
                 <li key={index} className="text-white">
                   {tech}
@@ -103,7 +103,7 @@ const Projects = () => {
                 className="bg-white px-8 py-2 mt-8 rounded-3xl text-gray-800 font-semibold uppercase tracking-wide transform transition duration-500 hover:bg-gray-200"
               >
                 GitHub
-              </a>
+              </a>  
             </div>
           </div>
         </motion.div>
