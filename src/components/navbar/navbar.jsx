@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { IoMdContact } from "react-icons/io";
 import { GrResume } from "react-icons/gr";
 import { FaProjectDiagram } from "react-icons/fa";
 import { FcAbout } from "react-icons/fc";
 import { GrAchievement } from "react-icons/gr";
+import { FaHome } from "react-icons/fa";
 
 const buttonVariants = {
   hover: {
@@ -24,13 +26,13 @@ const Navbar = () => {
 
   return (
     <motion.div
-      className="bg-[#2b2a27] bg-opacity-60 mx-auto rounded-lg"
+      className="bg-[#2b2a27] bg-opacity-60 mx-auto rounded-lg h-screen"
       style={{ height: showMenu ? 'auto' : '50px' }}
       initial={{ y: "-100%" }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="sm:hidden">
+      <div className="sm:hidden"> 
         <button
           className="block text-gray-500 hover:text-white focus:text-white focus:outline-none "
           onClick={toggleMenu}
@@ -48,47 +50,73 @@ const Navbar = () => {
           </svg>
         </button>
       </div>
-      <div className={`${showMenu ? "block" : "hidden"} sm:flex justify-evenly`}>
-        <div className="button grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 p-6">
+      <div className={`${showMenu ? "block" : "hidden"} sm:flex justify-center items-center`}>
+        <div className="button grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2 p-6">
+          {/* Use Link component to navigate to routes */}
           <motion.button
             className="flex flex-col items-center justify-center w-auto font-serif font-bold rounded-sm bg-opacity-20 text-white shadow-md"
             variants={buttonVariants}
             whileHover="hover"
           >
-            <IoMdContact size={24} />
-            <div>Contact</div>
+            <Link to="/">
+            <FaHome size={24} />
+              <div>Home</div> 
+            </Link>
+          </motion.button>
+
+          <motion.button
+            className="flex flex-col items-center justify-center w-auto font-serif font-bold rounded-sm bg-opacity-20 text-white shadow-md"
+            variants={buttonVariants}
+            whileHover="hover"
+          >
+            <Link to="/about">
+              <FcAbout size={24} />
+              <div>About</div>
+            </Link>
           </motion.button>
           <motion.button
             className="flex flex-col items-center justify-center w-auto font-serif font-bold rounded-sm bg-opacity-20 text-white shadow-md"
             variants={buttonVariants}
             whileHover="hover"
           >
-            <GrResume size={24} />
-            <div>Resume</div>
+            <Link to="/resume">
+              <GrResume size={24} />
+              <div>Resume</div>
+            </Link>
           </motion.button>
           <motion.button
             className="flex flex-col items-center justify-center w-auto font-serif font-bold rounded-sm bg-opacity-20 text-white shadow-md"
             variants={buttonVariants}
             whileHover="hover"
           >
-            <FaProjectDiagram size={24} />
-            <div>Project</div>
+            <Link to="/projects">
+              <FaProjectDiagram size={24} />
+              <div>Project</div>
+            </Link>
           </motion.button>
           <motion.button
             className="flex flex-col items-center justify-center w-auto font-serif font-bold rounded-sm bg-opacity-20 text-white shadow-md"
             variants={buttonVariants}
             whileHover="hover"
           >
-            <FcAbout size={24} />
-            <div>About</div>
+            
+            <Link to="/contact">
+              <IoMdContact size={24} />
+              <div>Contact</div>
+            </Link>
           </motion.button>
+         
+         
+         
           <motion.button
             className="flex flex-col items-center justify-center w-auto font-serif font-bold rounded-sm bg-opacity-20 text-white shadow-md"
             variants={buttonVariants}
             whileHover="hover"
           >
-            <GrAchievement size={24} />
-            <div>Achievement</div>
+            <Link to="/achievement">
+              <GrAchievement size={24} />
+              <div>Achievement</div>
+            </Link>
           </motion.button>
         </div>
       </div>

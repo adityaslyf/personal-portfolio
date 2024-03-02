@@ -1,8 +1,8 @@
-import React from "react";
+
 
 const skills = () => {
   return (
-    <div className="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12">
+    <div className="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 bg-[#2b2a27]">
       <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center font-serif text-yellow-600 mb-4 font-['Kode Mono', monospace] font-bold mb-10">Professional SkillSet</h1>
       <div className="w-full h-[5px] bg-gradient-to-r from-purple-700 via-orange-500 to-orange-500 mb-8"></div>
       <div className="flex flex-col sm:flex-row justify-evenly flex-wrap ">

@@ -1,10 +1,12 @@
 import React from "react";
 import ProfileImage from "../../assets/profilepic.jpg";
 import AboutImage from '../../assets/idea_01-removebg-preview.png'
+import Skills from '../skills/skills'
 
 const About = () => {
   return (
-    <div className=" bg-[#2b2a27] mt-4 flex flex-col md:flex-row justify-evenly  w-full h-[2200px]] p-4 font-kode-mono">
+    <>
+    <div className=" bg-[#2b2a27] mt-4 flex flex-col md:flex-row justify-evenly  w-full h-[2200px]] p-4 font-kode-mono scroll-smooth">
       <img
         className="rounded-md w-auto md:w-[600px] md:h-[400px] animate-fade-up"
         src={AboutImage}
@@ -21,7 +23,10 @@ const About = () => {
           Let's connect and create something extraordinary together!
         </span>
       </div>
+      
     </div>
+    <Skills />
+     </>
   );
 };
 
