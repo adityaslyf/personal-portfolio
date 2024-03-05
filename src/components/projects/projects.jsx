@@ -43,7 +43,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center px-4 md:px-0 bg-[#2b2a27] sm:mt-14">
+    <div className="flex flex-col items-center px-4 md:px-0 bg-[#101820]">
       <span className="text-2xl font-bold mb-4 w-full text-center">
         Projects
       </span>

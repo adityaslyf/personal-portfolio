@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <motion.div
-      className="bg-[#2b2a27] bg-opacity-60 mx-auto rounded-lg h-screen"
+      className="bg-[#101820]   mx-auto  h-screen"
       style={{ height: showMenu ? 'auto' : '50px' }}
       initial={{ y: "-100%" }}
       animate={{ y: 0 }}

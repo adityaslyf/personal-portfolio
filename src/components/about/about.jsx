@@ -6,7 +6,7 @@ import Skills from '../skills/skills'
 const About = () => {
   return (
     <>
-    <div className=" bg-[#2b2a27] mt-4 flex flex-col md:flex-row justify-evenly  w-full h-[2200px]] p-4 font-kode-mono scroll-smooth">
+    <div className=" bg-[#101820]  flex flex-col md:flex-row justify-evenly  w-full h-auto p-4 font-kode-mono scroll-smooth">
       <img
         className="rounded-md w-auto md:w-[600px] md:h-[400px] animate-fade-up"
         src={AboutImage}

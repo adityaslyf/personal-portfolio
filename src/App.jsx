@@ -13,7 +13,7 @@ import Footer from "./components/footer/footer";
 function App() {
   return (
     <Router>
-      <div className="w-auto h-screen  bg-[#2b2a27]">
+      <div className="w-auto">
         <Navbar />
         <Routes>
           <Route path="/" element={<Hero />} />

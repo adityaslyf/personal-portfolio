@@ -5,7 +5,7 @@ import "./hero.css";
 const Hero = () => {
   return (
     <>
-      <div className="flex flex-col sm:h-[94vh] md:flex-row-reverse items-center justify-evenly space-y-4 p-4 bg-[#2b2a27] rounded-lg shadow-md">
+      <div className="flex flex-col sm:h-[94.2vh] md:flex-row-reverse items-center justify-evenly space-y-4 p-4 bg-[#101820] shadow-md">
         <img
           className="rounded-lg h-46 w-46 md:h-96 md:w-96 animate-fade-up"
           src={ProfileImage}
