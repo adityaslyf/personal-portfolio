@@ -6,53 +6,51 @@ import MindVoyageImage from "../../assets/Screenshot from 2024-02-25 16-49-20.pn
 const Projects = () => {
   const projects = [
     {
-      title: "Amazon Clone",
-      description: `Amazon website clone is a testament to e-commerce innovation, featuring essential functionalities for seamless online shopping. Robust user authentication and intuitive navigation facilitate a user-friendly experience. Customers can browse products, add items to their basket, and proceed to checkout effortlessly. Secure payment modes ensure safe transactions, while the ability to remove items from the basket enhances flexibility. Login and sign-in options provide personalized access, allowing users to track orders and manage preferences. Explore the future of online shopping with our Amazon clone, where convenience meets reliability.
-        `,
-      image: AmazonImage,
-      color: "bg-blue-500",
-      techStack: [
-        "ReactJS",
-        "Firebase",
-        "JavaScript",
-        "Redux",
-        "Recoil",
-        "MERN",
-      ],
-      githubLink: "https://github.com/user/project1",
-      demoLink: "https://demo.com/project1",
+      title: "Solcanvas",
+      description: `Solana projects are hard to find and often lack updated information. Our platform solves this! Discover hidden gems, get personalized recommendations, and earn rewards for contributing project details. Users can add, edit, and commit projects. Admins can approve or reject projects, manage users, and facilitate login via different wallets.`,
+      image: "https://images.pexels.com/photos/5926373/pexels-photo-5926373.jpeg?auto=compress&cs=tinysrgb&w=600",
+      color: "bg-green-500",
+      techStack: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS"],
+      githubLink: "https://github.com/adityaslyf/Solcanvas",
+      demoLink: "https://solcanvas.xyz/",
     },
     {
-      title: "Mind Voyage",
-      description: `Our website exemplifies technical excellence, harmonizing features to promote sustainable tourism. Robust user authentication and an intuitive dashboard streamline navigation. AR/VR technology provides immersive 3D destination views, while precise price prediction tools aid budget planning. The roadmap feature optimizes itineraries, complemented by real-time location services. Community engagement tools encourage collaboration. Specialized eco-friendly packages and comprehensive booking functionalities enrich user experience. Discover the epitome of responsible travel, where technical mastery meets environmental stewardship
-      `,
-      image: MindVoyageImage,
-      color: "bg-red-500",
-      techStack: [
-        "ReactJS",
-        "Firebase",
-        "JavaScript",
-        "Redux",
-        "Recoil",
-        "MERN",
-      ],
-      githubLink: "https://github.com/user/project2",
-      demoLink: "https://demo.com/project2",
+      title: "eShopX",
+      description: `Developed a responsive frontend with ReactJS, TypeScript, TailwindCSS, and Redux Toolkit for state management. Built secure APIs using ExpressJS, Mongoose, and MongoDB, all written in TypeScript. Implemented file uploads with Multer and password hashing with bcrypt. Created features like cart management, checkout, CRUD operations, and search. Admin functionalities: add/edit products, create discount coupons, dashboard with charts, manage orders, view stocks and users. User functionalities: payments, basket management, sort products by category/price.`,
+      image: "https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg?auto=compress&cs=tinysrgb&w=600",
+      color: "bg-yellow-500",
+      techStack: ["ReactJS", "TypeScript", "TailwindCSS", "Redux Toolkit", "NodeJS", "ExpressJS", "MongoDB", "Multer", "Firebase"],
+      githubLink: "https://github.com/adityaslyf/eShopX",
+      demoLink: "https://e-shop-x-bti6.vercel.app/",
     },
-    // Add more projects as needed
+    {
+      title: "Sprinthacks",
+      description: `Developed a modern and responsive hackathon website using React, Tailwind CSS, and JavaScript to deliver a seamless user experience. Integrated React Router to implement efficient navigation and page transitions, enhancing website usability.`,
+      image: "https://images.pexels.com/photos/7014329/pexels-photo-7014329.jpeg?auto=compress&cs=tinysrgb&w=600",
+      color: "bg-purple-500",
+      techStack: ["React", "Tailwind CSS", "JavaScript"],
+      githubLink: "https://github.com/adityaslyf/Sprinthacks",
+      demoLink: "https://sprinthacks-website-five.vercel.app/",
+    },
+    {
+      title: "Fragmented",
+      description: `Building a platform that enables fractional ownership of high-value NFTs, democratizing access to digital assets. Developed the frontend using Next.js, TypeScript, and Tailwind CSS to ensure a seamless and modern user experience. Backend integration in progress using Node.js, Express, and PostgreSQL for secure and efficient data management. Leveraging smart contracts for secure fractional ownership transactions.`,
+      image: "https://images.pexels.com/photos/7014329/pexels-photo-7014329.jpeg?auto=compress&cs=tinysrgb&w=600",
+      color: "bg-teal-500",
+      techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js", "Express", "PostgreSQL"],
+      githubLink: "https://github.com/adityaslyf/fragmented",
+      demoLink: "https://fragmented-lime.vercel.app/",
+    },
   ];
 
   return (
     <div className="flex flex-col items-center px-4 md:px-0 bg-[#101820]">
-      <span className="text-2xl font-bold mb-4 w-full text-center">
-        Projects
-      </span>
-      <div className="w-full h-[5px] bg-gradient-to-r from-purple-700 via-orange-500 to-orange-500 mb-8"></div>
+      <div className="w-full h-[5px] bg-gradient-to-r from-purple-700 via-orange-500 to-orange-500 mb-8 mt-12"></div>
 
       {projects.map((project, index) => (
         <motion.div
           key={index}
-          className={`card flex flex-col md:flex-row items-center justify-evenly m-4 p-8 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 w-full`}
+          className={`card flex flex-col md:flex-row items-center justify-between m-4 p-8 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 w-full md:w-3/4`}
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.5 }}
@@ -73,20 +71,22 @@ const Projects = () => {
               {project.title}
             </motion.h1>
             <motion.p
-              className="text-sm text-white mt-4 w-full md:w-96 "
+              className="text-sm text-white mt-4 w-full md:w-96"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
               {project.description}
             </motion.p>
             <h2 className="text-lg text-white mt-4">Tech Stack:</h2>
-            <ul className=" flex gap-3 flex-wrap">
-              {project.techStack.map((tech, index) => (
-                <li key={index} className="text-white">
-                  {tech}
-                </li>
-              ))}
-            </ul>
+            <div className="overflow-x-auto max-w-full">
+              <ul className="flex flex-wrap gap-3">
+                {project.techStack.map((tech, index) => (
+                  <li key={index} className="text-white">
+                    {tech}
+                  </li>
+                ))}
+              </ul>
+            </div>
             <div className="mt-4">
               <a
                 href={project.demoLink}
@@ -103,7 +103,7 @@ const Projects = () => {
                 className="bg-white px-8 py-2 mt-8 rounded-3xl text-gray-800 font-semibold uppercase tracking-wide transform transition duration-500 hover:bg-gray-200"
               >
                 GitHub
-              </a>  
+              </a>
             </div>
           </div>
         </motion.div>

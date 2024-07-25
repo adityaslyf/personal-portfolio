@@ -27,12 +27,12 @@ const Navbar = () => {
   return (
     <motion.div
       className="bg-[#101820]   mx-auto  h-screen"
-      style={{ height: showMenu ? 'auto' : '50px' }}
+      style={{ height: showMenu ? "auto" : "50px" }}
       initial={{ y: "-100%" }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="sm:hidden"> 
+      <div className="sm:hidden">
         <button
           className="block text-gray-500 hover:text-white focus:text-white focus:outline-none "
           onClick={toggleMenu}
@@ -50,7 +50,11 @@ const Navbar = () => {
           </svg>
         </button>
       </div>
-      <div className={`${showMenu ? "block" : "hidden"} sm:flex justify-center items-center`}>
+      <div
+        className={`${
+          showMenu ? "block" : "hidden"
+        } sm:flex justify-center items-center`}
+      >
         <div className="button grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2 p-6">
           {/* Use Link component to navigate to routes */}
           <motion.button
@@ -59,8 +63,8 @@ const Navbar = () => {
             whileHover="hover"
           >
             <Link to="/">
-            <FaHome size={24} />
-              <div>Home</div> 
+              <FaHome size={24} />
+              <div>Home</div>
             </Link>
           </motion.button>
 
@@ -79,10 +83,14 @@ const Navbar = () => {
             variants={buttonVariants}
             whileHover="hover"
           >
-            <Link to="/resume">
+            <a
+              href="https://drive.google.com/file/d/1ZiGsSm5Pq8kTgFB04GZIRWhKoDufEQet/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <GrResume size={24} />
               <div>Resume</div>
-            </Link>
+            </a>
           </motion.button>
           <motion.button
             className="flex flex-col items-center justify-center w-auto font-serif font-bold rounded-sm bg-opacity-20 text-white shadow-md"
@@ -99,24 +107,21 @@ const Navbar = () => {
             variants={buttonVariants}
             whileHover="hover"
           >
-            
             <Link to="/contact">
               <IoMdContact size={24} />
               <div>Contact</div>
             </Link>
           </motion.button>
-         
-         
-         
+
           <motion.button
             className="flex flex-col items-center justify-center w-auto font-serif font-bold rounded-sm bg-opacity-20 text-white shadow-md"
             variants={buttonVariants}
             whileHover="hover"
           >
-            <Link to="/achievement">
+            {/* <Link to="/achievement">
               <GrAchievement size={24} />
               <div>Achievement</div>
-            </Link>
+            </Link> */}
           </motion.button>
         </div>
       </div>
