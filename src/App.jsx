@@ -10,9 +10,10 @@ import Experiences from "./components/experience/experience";
 import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
 // import Project from  '../src/components/test/project'
+
 function App() {
   return (
-    <Router>
+    <Router basename="/personal-portfolio">
       <div className="w-auto">
         <Navbar />
         <Routes>
